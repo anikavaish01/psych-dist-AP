@@ -1,0 +1,60 @@
+<html>
+    <link rel = 'stylesheet' href = 'style.css'>
+    <head>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+        <script src='main.js'></script>
+        <body>
+
+            <div class = 'textbox fixedbox' id = 'instrbox'>
+                <div class = 'instruc'>Are you a robot?</div>
+                <label><div class = 'selection'><input class = 'radio' type = 'radio' name = "not robot" value = '1'><p class = 'selection_text'>No, I am not a robot.</p></div></label>
+                <label><div class = 'selection'><input class = 'radio' type = 'radio' name = "not robot" value = '0'><p class = 'selection_text'>Yes, I am a robot.</p></div></label>
+                <button class = 'button' onclick='SHOW_PLEDGE()'>NEXT</button>
+                <div class = 'warning' id = 'instruc_warning'></div>
+            </div>
+
+            <div id = 'warning_box'></div>
+
+            <div class = 'textbox fixedbox' id = 'pledgebox'>
+                <div class = 'bold'>This experiment will take approximately 30 minutes. The purpose of this experiment is to gauge art appreciation among college students.
+                    If you are interested in continuing and pledge to take this study seriously, please select the first option. If not, you may return to the SONA front page with
+                    no further consequences. As researchers, we would much rather have fewer participants take this study seriously than more who do not. Therefore, we request that
+                    you do not participate in this experiment if you are not able to dedicate a focused 30 minutes to it. Thank you.
+                </div>
+                <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'pledge' value = '1'><p class = 'selection_text'>I have read the pledge and wish to continue with this experiment.</p></div></label>
+                <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'pledge' value = '0'><p class = 'selection_text'>I do not wish to continue with this experiment.</p></div></label>
+                <button class = 'button' onclick = 'DISTANCE_INDUCTION()'>NEXT</button>
+            </div>
+            
+            <div class = 'textbox fixedbox' id = 'dist_ind_1'>
+                <div class = 'bold'>Imagine that you are a student who has just graduated from art school. Because of your promise, you have just been hired by the local art association
+                     to plan and develop an intimate art gallery to be held in your city tomorrow. In a detailed, bulleted list, please write about how you envision the gallery.
+                </div>
+                <textarea id = 'present prime' name = 'present prime' rows = "15" cols = "120"></textarea>
+                <button class = 'button' onclick = 'LOAD_IMG()'>NEXT</button>
+            </div>
+
+            <div class = 'textbox fixedbox' id = 'dist_ind_2'>
+                <div class = 'bold'>Imagine that you are a student who will graduate from art school next year. Because of your promise, you have been hired by an art association to plan 
+                    and develop a small art gallery to be held in Grand Fenswick, Andorra 5 years from now. In a detailed, bulleted list, please write about how you envision the gallery.
+                </div>
+                <textarea id = 'future prime'  name = 'future prime' rows = "15" cols = "120"></textarea>
+                <button class = 'button' onclick = 'LOAD_IMG()'>NEXT</button>
+            </div>
+
+            <div class = 'textbox fixedbox' id = 'rating'>
+                <div class = 'instruc'>How visually pleasing is this image?</div>
+                <div class = "stimuli" id = "stimuli"></div>
+            
+                <div class='rating_area' id='rating_area'>
+                    <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'liking' value = '1'><p class = 'selection_text'>Extremely Visually Pleasing</p></div></label>
+                    <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'liking' value = '2'><p class = 'selection_text'>Relatively Visually Pleasing</p></div></label>
+                    <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'liking' value = '3'><p class = 'selection_text'>Neutral</p></div></label>
+                    <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'liking' value = '4'><p class = 'selection_text'>Relatively Visually Displeasing</p></div></label>
+                    <label><div class = 'selection'><input class = 'radio' type = 'radio' name = 'liking' value = '5'><p class = 'selection_text'>Extremely Visually Displeasing</p></div></label>
+                    <button class = 'button' onclick="NEXT_IMAGE()">NEXT</button>
+                </div>
+            </div>
+        </body>
+    </head>
+</html>

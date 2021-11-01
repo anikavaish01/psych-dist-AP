@@ -1,0 +1,169 @@
+body {
+    position: relative;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+}
+
+#warning_box {
+    position: relative;
+    width: 800px;
+    margin: 50px auto;
+    top: 50%;
+    max-height: 100%;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    background: crimson;
+}
+
+.fixedbox {
+    position: fixed;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    max-height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+#notif_box {
+    position: relative;
+    width: 800px;
+    margin: 50px auto;
+    top: 50%;
+    max-height: 100%;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    background: green;
+
+}
+
+.textbox {
+    position: relative;
+    width: 1000px;
+    max-height: 100%;
+}
+
+.instruc {
+    font-weight: bold;
+    text-align: center;
+}
+
+img {
+    max-width: 800px;
+    max-height: 400px;
+    margin: auto;
+    padding: 10px;
+}
+
+.selection {
+    position: relative;
+    margin: 20px 0;
+    padding: 10px;
+    width: 90%;
+    background: rgb(41, 41, 41);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#instrbox {
+    width: 800px;
+}
+
+#pledgebox {
+    width: 1000px;
+}
+
+.textarea {
+    font-size: 15;
+    color: white;
+}
+
+.selection:hover {
+    background: grey;
+}
+
+.selection_text {
+    display: inline;
+    position: relative;
+    left: 20px;
+    width: calc(100% - 20px);
+}
+
+.radio {
+    cursor: pointer;
+}
+
+.button {
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    margin: 20px auto;
+    color: white;
+    background: rgb(41, 41, 41);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgb(82, 142, 231);   
+}
+
+.rating_area {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.rating_button {
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    background: rgb(41, 41, 41);
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.rating_labels {
+    padding: 10px;
+}
+
+.r1 {
+    right: 75px;
+}
+
+.r2 {
+    left: 240px;
+}
+
+.r3 {
+    left: 405px;
+}
+
+.r4 {
+    left: 570px;
+}
+
+.r5 {
+    left: 735px;
+}
+
+.warning {
+    color: lightgrey;
+}
+
+.stimuli {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
